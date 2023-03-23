@@ -54,13 +54,6 @@
   padding: 1rem;
 }
 
-.controle-botao {
-  display: inline-block;
-  background-color: #fff;
-  border-radius: 50%;
-  border: 1px solid black;
-  font-weight: 500;
-
   width: 20px;
   height: 20px;
   cursor: pointer;
