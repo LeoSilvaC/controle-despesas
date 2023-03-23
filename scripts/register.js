@@ -42,8 +42,8 @@ function submit() {
 
   if (input.value.length == 0) {
     window.alert("Você precisa inserir um nome");
+  } else {
+    const elementoPai = document.querySelector(".container-pessoas");
+    elementoPai.appendChild(createContainer(input.value, [0, 0]));
   }
-
-  const elementoPai = document.querySelector(".container-pessoas");
-  elementoPai.appendChild(createContainer(input.value, [0, 0]));
 }
