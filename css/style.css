@@ -1,44 +1,69 @@
 @import url(itens.css);
 
-:root{
-    --cor-fundo: #787F96;
-    --cor-hamb: #263056;
-    --cor-cabec: #3A4365;
+:root {
+  --cor-fundo: #787f96;
+  --cor-hamb: #263056;
+  --cor-cabec: #3a4365;
 }
 
-body{
-    font-size: 18px;
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f3f3f3;
+body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
 }
 
-.lista-cab{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--cor-cabec);
-    align-items: center;
-    color: #ffffff;
+.main {
+  padding: 16px 16px 0;
+  box-sizing: border-box;
 }
 
-.menu-hamb{
-    display: flex;
-    background-color: var(--cor-hamb);
-    padding: 1.5rem;
-
-    cursor: pointer;
+.lista-cab {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--cor-cabec);
+  align-items: center;
+  color: #ffffff;
 }
 
-.titulo-principal{
-    font-size: 24px;
+.menu-hamb {
+  display: flex;
+  background-color: var(--cor-hamb);
+  padding: 1.5rem;
+
+  cursor: pointer;
 }
 
-.item-cab-caixa{
-    text-align: center;
-    margin: 0 1rem;
+.titulo-principal {
+  font-size: 24px;
 }
 
-.titulo-caixa{
-    font-size: 12px;
+.item-cab-caixa {
+  text-align: center;
+  margin: 0 1rem;
 }
 
+.titulo-caixa {
+  font-size: 12px;
+}
+
+.container-registro {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.container-registro input {
+  border: 1px solid #00000055;
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+.adc-logo {
+  display: flex;
+  width: 30px;
+  cursor: pointer;
+}
