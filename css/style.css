@@ -1,0 +1,44 @@
+@import url(itens.css);
+
+:root{
+    --cor-fundo: #787F96;
+    --cor-hamb: #263056;
+    --cor-cabec: #3A4365;
+}
+
+body{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f3;
+}
+
+.lista-cab{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-cabec);
+    align-items: center;
+    color: #ffffff;
+}
+
+.menu-hamb{
+    display: flex;
+    background-color: var(--cor-hamb);
+    padding: 1.5rem;
+
+    cursor: pointer;
+}
+
+.titulo-principal{
+    font-size: 24px;
+}
+
+.item-cab-caixa{
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.titulo-caixa{
+    font-size: 12px;
+}
+
