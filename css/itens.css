@@ -54,11 +54,6 @@
   padding: 1rem;
 }
 
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
 .texto-total,
 .valor-total {
   text-align: center;
