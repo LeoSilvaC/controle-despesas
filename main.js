@@ -5,12 +5,15 @@ const produtos = {
     "acai": 14
 }  
 
+const returnCurrency = (value) => value.toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
+
 itens.forEach(function(element){
     const botoes = element.querySelectorAll(".controle button")
 
     botoes.forEach(botao => botao.addEventListener("click", (event) => {
         atualizaItem(botao.parentElement, event);
-        atualizaTotal(element);
+        atualizaTotalItem(element);
+        atualizaTotal();
     }))
 })
 
@@ -25,13 +28,26 @@ function atualizaItem(controle, botao){
     }
 }
 
-function atualizaTotal(container){
+function atualizaTotalItem(container){
     const controles = container.querySelectorAll(".controle");
+    
     let totalValue = 0;
 
     controles.forEach( (controle) => {
         totalValue += parseInt(controle.querySelector("input").value) * produtos[controle.dataset.produto];
     });
 
-    container.querySelector("[data-estatistica]").innerText = totalValue.toLocaleString('pt-BR',{style:'currency',currency: 'BRL'});
+    container.querySelector("[data-estatistica]").innerText = returnCurrency(totalValue)
+}
+
+function atualizaTotal(){
+    let valoresItens = document.querySelectorAll(".container .valor-total");
+    
+    let caixaTotal = 0;
+
+    valoresItens.forEach(element => {
+        caixaTotal += parseInt(element.innerText.replace(",",".").replace(/[^\d.]/g,""));
+    })
+
+    document.querySelector(".caixa-valor").innerText = returnCurrency(caixaTotal);
 }
