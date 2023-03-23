@@ -35,11 +35,13 @@
   padding: 0 1rem;
 }
 
-.btn-editar {
+.remove-button {
+  color: #ff6666;
   text-decoration: none;
   border: none;
   background-color: transparent;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .controle-contador {
@@ -52,6 +54,18 @@
   align-items: center;
   text-align: center;
   padding: 1rem;
+}
+
+.controle-botao {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-weight: 500;
+
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .texto-total,
