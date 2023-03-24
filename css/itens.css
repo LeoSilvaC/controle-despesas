@@ -56,6 +56,16 @@
   padding: 1rem;
 }
 
+.controle-botao {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  width: 20px;
+  height: 20px;
+}
+
 .texto-total,
 .valor-total {
   text-align: center;
