@@ -50,6 +50,16 @@
   text-align: center;
 }
 
+.controle-botao {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+}
+
 .controle {
   align-items: center;
   text-align: center;
