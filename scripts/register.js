@@ -58,6 +58,7 @@ function createContainer(name, produtos) {
   const botoes = container.querySelectorAll(".controle-botao");
   botoes.forEach((botao) => {
     botao.addEventListener("click", handleButtonBehavior);
+    document.querySelector(".form-input").value = "";
   });
 
   const botaoRemover = container.querySelector(".remove-button");
